@@ -113,13 +113,13 @@ img.cake{
   position: absolute;
   width: 100%;
   height: 220px;
-  bottom: 430px;
+  bottom: 380px;
 }
 .box{
 }
 @font-face {
   font-family: bday;
-  src: url(font/Kingthings\ Bloone!.TTF);
+  src: url(//db.onlinewebfonts.com/c/d83e2995fcec865fc24c5ec74c1420f8?family=Kingthings+Bloone!);
 }
 
 .modal.open{
