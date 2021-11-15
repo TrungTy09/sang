@@ -119,7 +119,7 @@ img.cake{
 }
 @font-face {
   font-family: bday;
-  src: url(/birthday/font/Kingthings\ Bloone!.TTF);
+  src: url(font/Kingthings\ Bloone!.TTF);
 }
 
 .modal.open{
