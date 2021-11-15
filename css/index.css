@@ -1,0 +1,148 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: 	#000000;
+}
+.bday{
+  margin-top: 80px;
+  text-align: center;
+  background: linear-gradient(180deg, #f80112 0%, #2602f5 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent ;
+  cursor: pointer;
+  font-size: 80px;
+  font-family: bday;
+}
+
+.name{
+  margin-top: 80px;
+  padding-top: 120px;
+  text-align: center;
+  background: linear-gradient(180deg, #f80112 0%, #2602f5 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent ;
+  cursor: pointer;
+  font-size: 100px;
+  font-family: bday;
+  display: inline-block;
+}
+
+.name:hover{
+  -webkit-box-reflect: below;
+}
+
+.wrapper{
+  position: relative;
+  width: 320px;
+  margin: 150px auto;
+  perspective: 1000px;
+  margin-bottom: 500px;
+}
+
+.img-area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(-360deg) translateZ(-300px);
+  animation: animate 25s steps(1000, end) infinite;
+  display: inline-block;
+}
+
+.single-img{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+}
+
+.single-img img{
+  width: 300px;
+  height: 200px;
+  border: 5px solid #fff;
+}
+
+.single-img.img-one{
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.single-img.img-two{
+  transform: rotateY(60deg) translateZ(300px);
+}
+
+.single-img.img-three{
+  transform: rotateY(120deg) translateZ(300px);
+}
+
+.single-img.img-four{
+  transform: rotateY(180deg) translateZ(300px);
+}
+
+.single-img.img-fine{
+  transform: rotateY(240deg) translateZ(300px);
+}
+
+.single-img.img-six{
+  transform: rotateY(300deg) translateZ(300px);
+}
+
+img{
+  filter: grayscale(95%);
+  transition: 1s;
+  cursor: pointer;
+}
+ img:hover{
+  transition: 1s;
+  filter: grayscale(0);
+} 
+
+@keyframes animate{
+  from{
+    transform: rotateY(-360deg);
+  }
+  to{
+    transform: rotateY(0deg);
+  }
+}
+
+img.cake{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  bottom: 430px;
+}
+.box{
+}
+@font-face {
+  font-family: bday;
+  src: url(/birthday/font/Kingthings\ Bloone!.TTF);
+}
+
+.modal.open{
+  display: none;
+}
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.modal.close{
+  display: flex;
+}
+
+img.img-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
