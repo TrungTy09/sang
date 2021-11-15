@@ -25,6 +25,7 @@ body{
   font-size: 100px;
   font-family: bday;
   display: inline-block;
+  padding-left:340px
 }
 
 .name:hover{
@@ -113,7 +114,7 @@ img.cake{
   position: absolute;
   width: 100%;
   height: 220px;
-  bottom: 380px;
+  bottom: 260px;
 }
 .box{
 }
